@@ -1,8 +1,8 @@
 from Client0 import Client
 
-print(f"-----| Practice 2, Exercise 1 |------")
+print(f"-----| Practice 2, Exercise 2 |------")
 
-IP = "212.128.255.73"
+IP = "172.17.255.255"
 PORT = 8080
 
 c = Client(IP, PORT)
