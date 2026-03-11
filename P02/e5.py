@@ -17,4 +17,4 @@ while i < 5:
     message = "Fragment " + str(i+1)+ ": " + str(s)[i * 10:(i + 1) * 10]
     print(message)
     c.talk(message)
-    i +=1
+    i += 1
