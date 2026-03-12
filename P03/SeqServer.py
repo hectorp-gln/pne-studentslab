@@ -68,7 +68,7 @@ while True:
         else:
             message = "NOT A VALID COMMAND"
 
-        message += "\n"
+        #message += "\n"
         termcolor.cprint(str(command_type) + " command!", "green")
         print(message)
         cs.send(message.encode())
