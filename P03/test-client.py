@@ -7,8 +7,9 @@ c = Client(IP,PORT)
 
 commands_list = ["PING", "GET", "INFO", "COMP", "REV", "GENE"]
 GET_0 = "TGAGGACCGACGGTTAATAG"
+print("-----| Practice 3, Exercise 7 |-----")
+print(c)
 for command in commands_list:
-    print(command)
     if command == "GET":
         print(f"* Testing {command.split()[0]} . . .")
         for n in range(0,5):
@@ -23,10 +24,11 @@ for command in commands_list:
         list_files = ["U5", "ADA", "FRAT1", "FXN", "RNU6_269P"]
         print(f"* Testing {command.split()[0]} . . .")
         for GENE_name in list_files:
-            print(f"Testing {GENE_name} . . .")
+            print(f" Gene{GENE_name}")
             response = c.talk(command + " " + GENE_name)
             print(response)
     else:
         print(f"* Testing {command.split()[0]} . . .")
         response = c.talk(command)
         print(response)
+    print("\n")
