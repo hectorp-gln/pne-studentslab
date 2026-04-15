@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GENE</title>
+  </head>
+  <body>
+    <form action="echo" method="get">
+        <h1>Sequence number {{context.name}}</h1>
+        <div style="width: 50%; height: 300px; overflow-y: scroll; word-break: break-all; border: 1px solid #ccc; padding: 10px;">
+        {{context.gene}}
+        </div>
+        <p></p><a href="http://127.0.0.1:8080/">Main page</a>
+    </form>
+  </body>
+</html>

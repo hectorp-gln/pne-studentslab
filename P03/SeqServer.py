@@ -1,6 +1,5 @@
 import socket
 from Seq1 import Seq
-from Client0 import Client
 import termcolor
 
 IP = "127.0.0.1"

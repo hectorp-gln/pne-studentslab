@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>INDEX</title>
+  </head>
+  <body>
+    <h1>SEQ2 Server</h1>
+    <p>Access to the server</p>
+
+    <form action="myserver" method="get">
+      <hr>
+      <p>Is the server alive? <input type="submit" name="action" value="PING"/> </p>
+      <hr>
+      <p>Get a sequence. Select sequence number
+      <select name="get">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select><input type="submit" name="action" value="GET"/> </p>
+      <hr>
+      <p>Get a gene. Select gene name
+      <select name="gene">
+        <option value="U5">U5</option>
+        <option value="ADA">ADA</option>
+        <option value="FRAT1">FRAT1</option>
+        <option value="RNU6_269P">RNU6_269P</option>
+        <option value="FXN">FXN</option>
+      </select><input type="submit" name="action" value="GENE"/> </p>
+      <hr>
+      Write a sequence: <input type="text" name="user_seq"> <br>
+      Select operation:
+      <input type="radio" name="operation" value="Info" checked> Info
+      <input type="radio" name="operation" value="Comp"> Comp
+      <input type="radio" name="operation" value="Rev"> Rev
+      <p> Perform operation:<input type="submit" name="action" value="OPERATE!"/> </p>
+       <br>
+    </form>
+  </body>
+</html>
